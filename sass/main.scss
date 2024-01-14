@@ -1,0 +1,49 @@
+@import './colors';
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Outfit', sans-serif;
+}
+
+body {
+	font-size: 15px;
+	background-color: $light;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.box {
+	width: 320px;
+	height: 500px;
+	background-color: $white;
+	border-radius: 20px;
+
+	&__background {
+		width: 90%;
+		height: 60%;
+		margin: 15px auto;
+		background-image: url('../images/image-qr-code.png');
+		background-size: cover;
+		border-radius: 10px;
+	}
+	&__title {
+		padding: 10px 20px 0;
+		text-align: center;
+		color: $dark;
+	}
+	&__text {
+		text-align: center;
+		color: $grayish;
+		margin: 20px 30px;
+	}
+}
+.attribution {
+	display: block;
+	position: absolute;
+	top: 110vh;
+}
+
+@media (min-width: 1440px) {
+}
